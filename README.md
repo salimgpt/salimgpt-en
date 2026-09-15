@@ -17,7 +17,7 @@ One of the most important features of this project is the **Automatic Documentar
 You do not need to manually create a new HTML page whenever you publish a new documentary.
 
 You only need to:
-
+ 
 1. Create a Markdown file.
 2. Upload 4 documentary images.
 3. Push the files to the GitHub `main` branch.
