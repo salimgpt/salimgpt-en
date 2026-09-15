@@ -1,0 +1,32 @@
+{
+  "name": "SalimGPT — Research-Based English Documentaries",
+  "short_name": "SalimGPT",
+  "description": "A research-based English documentary platform built through research, fact-checking, and original presentation.",
+  "lang": "en-US",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "categories": [
+    "education",
+    "entertainment",
+    "news"
+  ],
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/brand/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
