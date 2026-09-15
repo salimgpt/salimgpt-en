@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
+  <title>{{TITLE}} — SalimGPT</title>
+
+
+  <!-- =====================================================
+       BASIC SEO
+  ====================================================== -->
+
+  <meta
+    name="description"
+    content="{{DESCRIPTION}}"
+  >
+
+  <meta
+    name="author"
+    content="Mohammad Salim"
+  >
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large"
+  >
+
+  <meta
+    name="theme-color"
+    content="#ffffff"
+  >
+
+  <meta
+    name="color-scheme"
+    content="light"
+  >
+
+
+  <!-- =====================================================
+       CANONICAL
+  ====================================================== -->
+
+  <link
+    rel="canonical"
+    href="{{PAGE_URL}}"
+  >
+
+
+  <!-- =====================================================
+       OPEN GRAPH
+  ====================================================== -->
+
+  <meta
+    property="og:type"
+    content="article"
+  >
+
+  <meta
+    property="og:locale"
+    content="en_US"
+  >
+
+  <meta
+    property="og:site_name"
+    content="SalimGPT"
+  >
+
+  <meta
+    property="og:title"
+    content="{{TITLE}}"
+  >
+
+  <meta
+    property="og:description"
+    content="{{DESCRIPTION}}"
+  >
+
+  <meta
+    property="og:url"
+    content="{{PAGE_URL}}"
+  >
+
+  <meta
+    property="og:image"
+    content="{{OG_IMAGE_URL}}"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="{{TITLE}} — SalimGPT documentary"
+  >
+
+  <meta
+    property="article:published_time"
+    content="{{DATE_ISO}}"
+  >
+
+  <meta
+    property="article:modified_time"
+    content="{{DATE_ISO}}"
+  >
+
+
+  <!-- =====================================================
+       TWITTER / X
+  ====================================================== -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="{{TITLE}}"
+  >
+
+  <meta
+    name="twitter:description"
+    content="{{DESCRIPTION}}"
+  >
+
+  <meta
+    name="twitter:image"
+    content="{{OG_IMAGE_URL}}"
+  >
+
+  <meta
+    name="twitter:image:alt"
+    content="{{TITLE}} — SalimGPT documentary"
+  >
+
+
+  <!-- =====================================================
+       SITE FILES
+  ====================================================== -->
+
+  <link
+    rel="icon"
+    href="../../favicon.svg"
+    type="image/svg+xml"
+  >
+
+  <link
+    rel="manifest"
+    href="../../manifest.webmanifest"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../../css/documentary.css"
+  >
+
+
+  <!-- =====================================================
+       STRUCTURED DATA
+  ====================================================== -->
+
+  <script type="application/ld+json">
+{{STRUCTURED_DATA}}
+  </script>
+
+</head>
+
+
+<body
+  data-documentary="{{SLUG}}"
+  data-documentary-source="{{SOURCE_FILE}}"
+  data-documentary-date="{{DATE_ISO}}"
+>
+
+
+  <!-- =====================================================
+       READING PROGRESS
+  ====================================================== -->
+
+  <div
+    class="reading-progress"
+    id="readingProgressBar"
+    role="progressbar"
+    aria-label="Documentary reading progress"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="0"
+  ></div>
+
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <a
+        class="header-brand"
+        href="../../"
+        aria-label="SalimGPT Home"
+      >
+
+        <img
+          class="header-logo"
+          src="../../assets/brand/logo.svg"
+          alt="SalimGPT"
+          width="46"
+          height="46"
+        >
+
+        <div class="header-brand-text">
+
+          <strong class="header-wordmark">
+            <span>Salim</span><span class="brand-red">GPT</span>
+          </strong>
+
+          <small class="header-tagline">
+            Research-Based Documentary Media
+          </small>
+
+        </div>
+
+      </a>
+
+
+      <button
+        class="menu-open-button"
+        id="menuOpenButton"
+        type="button"
+        aria-label="Open side menu"
+        aria-controls="sideMenu"
+        aria-expanded="false"
+      >
+
+        <svg
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path d="M4 6h16"></path>
+          <path d="M4 12h16"></path>
+          <path d="M4 18h16"></path>
+        </svg>
+
+        <span>
+          Menu
+        </span>
+
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
+  <main id="main-content">
+
+
+    <article
+      class="documentary-article"
+      data-documentary-article
+      aria-labelledby="documentaryTitle"
+    >
+
+
+      <!-- =================================================
+           HERO
+      ================================================== -->
+
+      <header class="documentary-hero">
+
+
+        <!-- ===============================================
+             BREADCRUMB
+        ================================================ -->
+
+        <nav
+          class="breadcrumb"
+          aria-label="Breadcrumb"
+        >
+
+          <a href="../../">
+            Home
+          </a>
+
+          <span aria-hidden="true">
+            /
+          </span>
+
+          <a href="../../#documentaries">
+            Documentaries
+          </a>
+
+          <span aria-hidden="true">
+            /
+          </span>
+
+          <span aria-current="page">
+            {{TITLE}}
+          </span>
+
+        </nav>
+
+
+        <span class="documentary-kicker">
+          SALIMGPT DOCUMENTARY
+        </span>
+
+
+        <h1 id="documentaryTitle">
+          {{TITLE}}
+        </h1>
+
+
+        <p class="documentary-deck">
+          {{DESCRIPTION}}
+        </p>
+
+
+        <!-- ===============================================
+             ARTICLE META
+        ================================================ -->
+
+        <div class="article-meta">
+
+
+          <!-- Director -->
+
+          <span class="meta-item">
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <circle
+                cx="12"
+                cy="8"
+                r="4"
+              ></circle>
+
+              <path
+                d="M5 21c.8-4.2 3.1-6.3 7-6.3S18.2 16.8 19 21"
+              ></path>
+            </svg>
+
+            <span>
+              Research &amp; Direction:
+              <strong>
+                Mohammad Salim
+              </strong>
+            </span>
+
+          </span>
+
+
+          <!-- Publication date -->
+
+          <span class="meta-item">
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <rect
+                x="4"
+                y="5"
+                width="16"
+                height="15"
+                rx="2"
+              ></rect>
+
+              <path d="M8 3v4"></path>
+              <path d="M16 3v4"></path>
+              <path d="M4 10h16"></path>
+            </svg>
+
+            <time datetime="{{DATE_ISO}}">
+              {{DATE_BN}}
+            </time>
+
+          </span>
+
+
+          <!-- Reading time -->
+
+          <span class="meta-item">
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="9"
+              ></circle>
+
+              <path d="M12 7v5l3 2"></path>
+            </svg>
+
+            <span>
+              Approx.
+
+              <strong
+                id="readingTime"
+                data-generated-reading-time
+              >
+                {{READING_TIME}} min read
+              </strong>
+
+            </span>
+
+          </span>
+
+
+          <!-- Article type -->
+
+          <span class="meta-item">
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M5 3h10l4 4v14H5z"></path>
+              <path d="M15 3v5h5"></path>
+              <path d="M8 12h8"></path>
+              <path d="M8 16h6"></path>
+            </svg>
+
+            <span>
+              Full Written Documentary
+            </span>
+
+          </span>
+
+        </div>
+
+
+        <!-- ===============================================
+             MAIN MEDIA
+
+             build.js automatically inserts:
+
+             YouTube available:
+             → real YouTube thumbnail
+
+             YouTube unavailable:
+             → uploaded local image
+        ================================================ -->
+
+        {{HERO_MEDIA_HTML}}
+
+
+        <!-- ===============================================
+             PRIMARY ACTIONS
+        ================================================ -->
+
+        <div class="article-actions">
+
+
+          <!-- Generated YouTube button -->
+
+          {{YOUTUBE_ACTION_HTML}}
+
+
+          <!-- Copy -->
+
+          <button
+            class="copy-link-button"
+            id="copyDocumentaryLink"
+            data-copy-button
+            type="button"
+            aria-label="Copy documentary link"
+          >
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <rect
+                x="8"
+                y="8"
+                width="11"
+                height="11"
+                rx="2"
+              ></rect>
+
+              <path
+                d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"
+              ></path>
+            </svg>
+
+            <span data-copy-label>
+              Copy Link
+            </span>
+
+          </button>
+
+
+          <!-- Share -->
+
+          <button
+            class="share-button"
+            id="shareDocumentaryButton"
+            data-share-button
+            type="button"
+            aria-label="Share documentary"
+          >
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+
+              <circle
+                cx="6"
+                cy="12"
+                r="3"
+              ></circle>
+
+              <circle
+                cx="18"
+                cy="6"
+                r="3"
+              ></circle>
+
+              <circle
+                cx="18"
+                cy="18"
+                r="3"
+              ></circle>
+
+              <path d="m8.7 10.7 6.6-3.4"></path>
+              <path d="m8.7 13.3 6.6 3.4"></path>
+
+            </svg>
+
+            <span data-share-label>
+              Share
+            </span>
+
+          </button>
+
+        </div>
+
+      </header>
+
+
+      <!-- =================================================
+           MOBILE TABLE OF CONTENTS
+      ================================================== -->
+
+      <div
+        class="mobile-toc"
+        data-mobile-toc
+      >
+
+        <details>
+
+          <summary>
+            Chapters in this documentary
+          </summary>
+
+          <ol
+            class="mobile-toc-list"
+            id="mobileTocList"
+            data-toc-list
+          >
+            {{MOBILE_TOC_HTML}}
+          </ol>
+
+        </details>
+
+      </div>
+
+
+      <!-- =================================================
+           DOCUMENTARY LAYOUT
+      ================================================== -->
+
+      <div class="documentary-layout">
+
+
+        <!-- ===============================================
+             ARTICLE COLUMN
+        ================================================ -->
+
+        <div class="article-column">
+
+          <div
+            class="article-body"
+            id="documentaryArticle"
+            data-documentary-body
+          >
+
+            {{ARTICLE_HTML}}
+
+
+            <!-- ===========================================
+                 DOCUMENTARY DISCLAIMER
+            ============================================ -->
+
+            <div class="documentary-disclaimer">
+
+              <strong>
+                Information &amp; Safety Note
+              </strong>
+
+              <p>
+                This documentary is published for research,
+                educational, and informational purposes.
+                It is not a substitute for individualized
+                professional advice in medicine, law,
+                finance, public safety,
+                or any other regulated professional field.
+                For important decisions,
+                consult current primary sources
+                and, where appropriate,
+                a qualified professional.
+              </p>
+
+            </div>
+
+
+            <!-- ===========================================
+                 EDITORIAL NOTE
+            ============================================ -->
+
+            <div class="article-end-note">
+
+              <span class="section-kicker">
+                SALIMGPT EDITORIAL NOTE
+              </span>
+
+              <h3>
+                From research to story,
+                from story to knowledge
+              </h3>
+
+              <p>
+                SalimGPT attempts to cross-check
+                important factual claims
+                against multiple sources
+                whenever possible.
+                However, historical records,
+                scientific knowledge,
+                public data,
+                law-enforcement assessments,
+                and evolving events
+                may change over time.
+              </p>
+
+              <p>
+                If you identify a factual error,
+                attribution issue,
+                or source-related concern,
+                you may use the SalimGPT
+                Contact page
+                and provide specific evidence.
+              </p>
+
+            </div>
+
+
+            <!-- ===========================================
+                 BOTTOM SHARE BAR
+            ============================================ -->
+
+            <div class="share-bar">
+
+
+              <button
+                class="share-button"
+                id="articleShareButton"
+                data-share-button
+                type="button"
+                aria-label="Share documentary"
+              >
+
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+
+                  <circle
+                    cx="6"
+                    cy="12"
+                    r="3"
+                  ></circle>
+
+                  <circle
+                    cx="18"
+                    cy="6"
+                    r="3"
+                  ></circle>
+
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="3"
+                  ></circle>
+
+                  <path d="m8.7 10.7 6.6-3.4"></path>
+                  <path d="m8.7 13.3 6.6 3.4"></path>
+
+                </svg>
+
+                <span data-share-label>
+                  Share Documentary
+                </span>
+
+              </button>
+
+
+              <button
+                class="copy-link-button"
+                id="articleCopyLinkButton"
+                data-copy-button
+                type="button"
+                aria-label="Copy documentary link"
+              >
+
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+
+                  <rect
+                    x="8"
+                    y="8"
+                    width="11"
+                    height="11"
+                    rx="2"
+                  ></rect>
+
+                  <path
+                    d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"
+                  ></path>
+
+                </svg>
+
+                <span data-copy-label>
+                  Copy Link
+                </span>
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ===============================================
+             SIDEBAR
+        ================================================ -->
+
+        <aside
+          class="article-sidebar"
+          aria-label="Documentary navigation"
+        >
+
+
+          <!-- =============================================
+               TABLE OF CONTENTS
+          ============================================== -->
+
+          <nav
+            class="article-toc"
+            id="documentaryToc"
+            aria-label="Documentary chapters"
+          >
+
+            <div class="toc-header">
+
+              <span>
+                CONTENT
+              </span>
+
+              <strong>
+                In this documentary
+              </strong>
+
+            </div>
+
+
+            <ol
+              class="toc-list documentary-toc-list"
+              id="tocList"
+              data-toc-list
+            >
+              {{TOC_HTML}}
+            </ol>
+
+          </nav>
+
+
+          <!-- =============================================
+               DIRECTOR
+          ============================================== -->
+
+          <div class="author-card">
+
+            <div class="author-card-top">
+
+              <span
+                class="author-avatar"
+                aria-hidden="true"
+              >
+                MS
+              </span>
+
+              <div>
+
+                <strong>
+                  Mohammad Salim
+                </strong>
+
+                <small>
+                  Founder &amp; Director
+                </small>
+
+              </div>
+
+            </div>
+
+
+            <p>
+              Topic selection,
+              research,
+              fact-checking,
+              scripting,
+              editorial direction,
+              visual planning,
+              and final publication review.
+            </p>
+
+          </div>
+
+
+          <!-- =============================================
+               FACT CHECKING
+          ============================================== -->
+
+          <div class="sidebar-card">
+
+            <span class="sidebar-card-label">
+              RESEARCH
+            </span>
+
+            <h3>
+              Fact-Checking &amp; Sources
+            </h3>
+
+            <p>
+              Learn about SalimGPT's research,
+              source evaluation,
+              and correction process.
+            </p>
+
+            <a href="../../fact-checking/">
+              View Policy →
+            </a>
+
+          </div>
+
+
+          <!-- =============================================
+               AI POLICY
+          ============================================== -->
+
+          <div class="sidebar-card">
+
+            <span class="sidebar-card-label">
+              AI DISCLOSURE
+            </span>
+
+            <h3>
+              AI-Assisted Production
+            </h3>
+
+            <p>
+              Narration may be synthetic,
+              and some visuals may be
+              AI-generated or AI-assisted.
+            </p>
+
+            <a href="../../ai-policy/">
+              AI Policy →
+            </a>
+
+          </div>
+
+
+          <!-- =============================================
+               CONTACT
+          ============================================== -->
+
+          <div class="sidebar-card">
+
+            <span class="sidebar-card-label">
+              CORRECTION
+            </span>
+
+            <h3>
+              Found an error?
+            </h3>
+
+            <p>
+              You can submit a correction
+              with the specific claim,
+              source,
+              and supporting evidence.
+            </p>
+
+            <a href="../../contact/">
+              Contact →
+            </a>
+
+          </div>
+
+        </aside>
+
+      </div>
+
+    </article>
+
+
+    <!-- ===================================================
+         RELATED DOCUMENTARIES
+    ==================================================== -->
+
+    <section
+      class="related-section"
+      aria-labelledby="relatedTitle"
+    >
+
+      <div class="related-heading">
+
+        <span>
+          MORE DOCUMENTARIES
+        </span>
+
+        <h2 id="relatedTitle">
+          Related Documentaries
+        </h2>
+
+      </div>
+
+
+      <div
+        class="related-grid"
+        id="relatedDocumentaries"
+      >
+        {{RELATED_HTML}}
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         EXPLORE
+    ==================================================== -->
+
+    <section class="next-section">
+
+      <div class="next-heading">
+
+        <span>
+          EXPLORE SALIMGPT
+        </span>
+
+        <h2>
+          Learn More
+        </h2>
+
+      </div>
+
+
+      <div class="next-grid">
+
+
+        <a
+          class="next-card"
+          href="../../fact-checking/"
+        >
+
+          <span class="next-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M4 4h12v16H4z"></path>
+
+              <circle
+                cx="17"
+                cy="16"
+                r="4"
+              ></circle>
+
+              <path d="m20 19 2 2"></path>
+            </svg>
+
+          </span>
+
+
+          <div>
+
+            <strong>
+              Fact-Checking &amp; Sources
+            </strong>
+
+            <small>
+              Research verification process
+            </small>
+
+          </div>
+
+
+          <svg
+            class="next-arrow"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="m9 6 6 6-6 6"></path>
+          </svg>
+
+        </a>
+
+
+        <a
+          class="next-card"
+          href="../../production-process/"
+        >
+
+          <span class="next-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="9"
+              ></circle>
+
+              <path d="m10 8 6 4-6 4z"></path>
+            </svg>
+
+          </span>
+
+
+          <div>
+
+            <strong>
+              Production Process
+            </strong>
+
+            <small>
+              How a documentary is made
+            </small>
+
+          </div>
+
+
+          <svg
+            class="next-arrow"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="m9 6 6 6-6 6"></path>
+          </svg>
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-main">
+
+
+      <!-- ===============================================
+           BRAND
+      ================================================ -->
+
+      <div class="footer-brand">
+
+        <a
+          class="footer-logo-link"
+          href="../../"
+          aria-label="SalimGPT Home"
+        >
+
+          <img
+            src="../../assets/brand/logo.svg"
+            alt="SalimGPT"
+            width="44"
+            height="44"
+          >
+
+          <strong>
+            Salim<span>GPT</span>
+          </strong>
+
+        </a>
+
+
+        <p>
+          From research to story,
+          from story to knowledge.
+          SalimGPT presents complex topics
+          in history,
+          science,
+          society,
+          and human civilization
+          through research-based documentaries.
+        </p>
+
+      </div>
+
+
+      <!-- ===============================================
+           QUICK MENU
+      ================================================ -->
+
+      <nav
+        class="footer-menu"
+        aria-label="Quick Menu"
+      >
+
+        <h2>
+          Quick Menu
+        </h2>
+
+
+        <div class="footer-menu-links">
+
+          <a href="../../about/">
+            About
+          </a>
+
+          <a href="../../director/">
+            Director
+          </a>
+
+          <a href="../../production-process/">
+            Production Process
+          </a>
+
+          <a href="../../fact-checking/">
+            Fact-Checking
+          </a>
+
+          <a href="../../ai-policy/">
+            AI Policy
+          </a>
+
+          <a href="../../faq/">
+            FAQ
+          </a>
+
+          <a href="../../social/">
+            Social
+          </a>
+
+          <a href="../../contact/">
+            Contact
+          </a>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <p>
+        © <span id="footerYear"></span>
+        SalimGPT. All rights reserved.
+      </p>
+
+
+      <nav
+        class="footer-legal"
+        aria-label="Legal Menu"
+      >
+
+        <a href="../../legal/privacy/">
+          Privacy
+        </a>
+
+        <a href="../../legal/terms/">
+          Terms
+        </a>
+
+        <a href="../../legal/disclaimer/">
+          Disclaimer
+        </a>
+
+      </nav>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =====================================================
+       DRAWER OVERLAY
+  ====================================================== -->
+
+  <div
+    class="menu-overlay"
+    id="menuOverlay"
+    aria-hidden="true"
+  ></div>
+
+
+  <!-- =====================================================
+       SIDE MENU
+  ====================================================== -->
+
+  <aside
+    class="side-menu"
+    id="sideMenu"
+    aria-label="SalimGPT side menu"
+    aria-hidden="true"
+  >
+
+
+    <!-- ===================================================
+         DRAWER HEADER
+    ==================================================== -->
+
+    <header class="side-menu-header">
+
+      <a
+        class="side-menu-brand"
+        href="../../"
+        aria-label="SalimGPT Home"
+      >
+
+        <img
+          class="side-menu-logo"
+          src="../../assets/brand/logo.svg"
+          alt="SalimGPT"
+          width="54"
+          height="54"
+        >
+
+
+        <div>
+
+          <strong>
+            Salim<span>GPT</span>
+          </strong>
+
+          <small>
+            Documentary Media
+          </small>
+
+        </div>
+
+      </a>
+
+
+      <button
+        class="menu-close-button"
+        id="menuCloseButton"
+        type="button"
+        aria-label="Close side menu"
+      >
+
+        <svg
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path d="M6 6l12 12"></path>
+          <path d="M18 6 6 18"></path>
+        </svg>
+
+      </button>
+
+    </header>
+
+
+    <!-- ===================================================
+         DRAWER CONTENT
+    ==================================================== -->
+
+    <div class="side-menu-content">
+
+
+      <!-- ===============================================
+           INTRODUCTION
+      ================================================ -->
+
+      <section class="menu-section">
+
+        <h2 class="menu-section-title">
+          Introduction
+        </h2>
+
+        <nav class="menu-items">
+
+
+          <a
+            class="menu-item"
+            href="../../"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+                <path d="M3.5 11 12 4l8.5 7"></path>
+                <path d="M5.5 10v10h13V10"></path>
+                <path d="M9.5 20v-6h5v6"></path>
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Home
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+
+          <a
+            class="menu-item"
+            href="../../about/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="9"
+                ></circle>
+
+                <path d="M12 11v6"></path>
+                <path d="M12 7.5h.01"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              About SalimGPT
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+
+          <a
+            class="menu-item"
+            href="../../director/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <circle
+                  cx="12"
+                  cy="8"
+                  r="4"
+                ></circle>
+
+                <path d="M4.5 20c.7-4 3.2-6 7.5-6s6.8 2 7.5 6"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Director — Mohammad Salim
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+
+          <a
+            class="menu-item"
+            href="../../originality/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="9"
+                ></circle>
+
+                <path d="m8 12 2.7 2.7L16.5 9"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Originality
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+        </nav>
+
+      </section>
+
+
+      <div
+        class="menu-divider"
+        aria-hidden="true"
+      ></div>
+
+
+      <!-- ===============================================
+           DOCUMENTARY
+      ================================================ -->
+
+      <section class="menu-section">
+
+        <h2 class="menu-section-title">
+          Documentary
+        </h2>
+
+        <nav class="menu-items">
+
+
+          <a
+            class="menu-item"
+            href="../../production-process/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="9"
+                ></circle>
+
+                <path d="m10 8 6 4-6 4z"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Production Process
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+
+          <a
+            class="menu-item"
+            href="../../studio/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <rect
+                  x="3"
+                  y="5"
+                  width="18"
+                  height="14"
+                  rx="2"
+                ></rect>
+
+                <path d="M8 9h8"></path>
+                <path d="M8 13h5"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Studio &amp; Production
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+
+          <a
+            class="menu-item"
+            href="../../visual-media/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <rect
+                  x="3"
+                  y="4"
+                  width="18"
+                  height="16"
+                  rx="2"
+                ></rect>
+
+                <circle
+                  cx="9"
+                  cy="9"
+                  r="2"
+                ></circle>
+
+                <path d="m5 18 5-5 3 3 2-2 4 4"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Visual &amp; Media Sources
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+
+          <a
+            class="menu-item"
+            href="../../fact-checking/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <path d="M4 4h12v16H4z"></path>
+                <path d="M8 8h4"></path>
+                <path d="M8 12h3"></path>
+
+                <circle
+                  cx="17"
+                  cy="16"
+                  r="4"
+                ></circle>
+
+                <path d="m20 19 2 2"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Fact-Checking &amp; Sources
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+        </nav>
+
+      </section>
+
+
+      <div
+        class="menu-divider"
+        aria-hidden="true"
+      ></div>
+
+
+      <!-- ===============================================
+           POLICIES
+      ================================================ -->
+
+      <section class="menu-section">
+
+        <h2 class="menu-section-title">
+          Policies
+        </h2>
+
+        <nav class="menu-items">
+
+
+          <a
+            class="menu-item"
+            href="../../ai-policy/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <rect
+                  x="5"
+                  y="5"
+                  width="14"
+                  height="14"
+                  rx="3"
+                ></rect>
+
+                <path d="M9 2v3M15 2v3M9 19v3M15 19v3"></path>
+
+                <path d="M2 9h3M2 15h3M19 9h3M19 15h3"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              AI Policy
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+
+          <a
+            class="menu-item"
+            href="../../editorial-policy/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <path d="M5 3h10l4 4v14H5z"></path>
+                <path d="M15 3v5h5"></path>
+                <path d="M8 12h8"></path>
+                <path d="M8 16h6"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Editorial Policy
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+
+          <a
+            class="menu-item"
+            href="../../ownership-copyright/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="9"
+                ></circle>
+
+                <path d="M15 9.5a4 4 0 1 0 0 5"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Ownership &amp; Copyright
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+
+          <a
+            class="menu-item"
+            href="../../content-use/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <path d="M6 3h12v18H6z"></path>
+                <path d="M9 8h6"></path>
+                <path d="M9 12h6"></path>
+                <path d="m9 16 1.5 1.5L15 14"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Content Use Policy
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+        </nav>
+
+      </section>
+
+
+      <div
+        class="menu-divider"
+        aria-hidden="true"
+      ></div>
+
+
+      <!-- ===============================================
+           SUPPORT & CONTACT
+      ================================================ -->
+
+      <section class="menu-section">
+
+        <h2 class="menu-section-title">
+          Support &amp; Contact
+        </h2>
+
+        <nav class="menu-items">
+
+
+          <a
+            class="menu-item"
+            href="../../faq/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="9"
+                ></circle>
+
+                <path d="M9.5 9a2.6 2.6 0 1 1 3.8 2.3c-.9.5-1.3 1-1.3 2"></path>
+
+                <path d="M12 17h.01"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Frequently Asked Questions (FAQ)
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+
+          <a
+            class="menu-item"
+            href="../../social/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <circle
+                  cx="6"
+                  cy="12"
+                  r="3"
+                ></circle>
+
+                <circle
+                  cx="18"
+                  cy="6"
+                  r="3"
+                ></circle>
+
+                <circle
+                  cx="18"
+                  cy="18"
+                  r="3"
+                ></circle>
+
+                <path d="m8.7 10.7 6.6-3.4"></path>
+                <path d="m8.7 13.3 6.6 3.4"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Social Network
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+
+          <a
+            class="menu-item"
+            href="../../contact/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <rect
+                  x="3"
+                  y="5"
+                  width="18"
+                  height="14"
+                  rx="2"
+                ></rect>
+
+                <path d="m4 7 8 6 8-6"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Contact
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+        </nav>
+
+      </section>
+
+
+      <div
+        class="menu-divider"
+        aria-hidden="true"
+      ></div>
+
+
+      <!-- ===============================================
+           LEGAL & PRIVACY
+      ================================================ -->
+
+      <section class="menu-section">
+
+        <h2 class="menu-section-title">
+          Legal &amp; Privacy
+        </h2>
+
+        <nav class="menu-items">
+
+
+          <a
+            class="menu-item"
+            href="../../legal/privacy/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <path d="M12 3 5 6v5c0 4.8 2.8 8 7 10 4.2-2 7-5.2 7-10V6z"></path>
+
+                <path d="m9 12 2 2 4-4"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Privacy Policy
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+
+          <a
+            class="menu-item"
+            href="../../legal/terms/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <path d="M5 3h14v18H5z"></path>
+                <path d="M8 8h8"></path>
+                <path d="M8 12h8"></path>
+                <path d="M8 16h5"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Terms of Use
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+
+          <a
+            class="menu-item"
+            href="../../legal/disclaimer/"
+          >
+
+            <span class="menu-icon">
+
+              <svg viewBox="0 0 24 24">
+
+                <path d="M12 3 2.8 20h18.4z"></path>
+                <path d="M12 9v5"></path>
+                <path d="M12 17h.01"></path>
+
+              </svg>
+
+            </span>
+
+            <span class="menu-label">
+              Disclaimer
+            </span>
+
+            <span class="menu-chevron">
+
+              <svg viewBox="0 0 24 24">
+                <path d="m9 6 6 6-6 6"></path>
+              </svg>
+
+            </span>
+
+          </a>
+
+        </nav>
+
+      </section>
+
+    </div>
+
+
+    <!-- ===================================================
+         DRAWER FOOTER
+    ==================================================== -->
+
+    <footer class="side-menu-footer">
+
+      <span>
+        © <span id="menuYear"></span>
+        SalimGPT
+      </span>
+
+      <span>
+        Mohammad Salim
+      </span>
+
+    </footer>
+
+  </aside>
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script src="../../js/menu.js"></script>
+
+  <script src="../../js/documentary.js"></script>
+
+</body>
+
+</html>
